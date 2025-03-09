@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body class="">
+    <header class="header">
+
+</header>
+
+    <div id="loading-screen">
+    <div class="heart-container">
+        <!-- Сердце с анимацией -->
+        <div class="heart"></div>
+        <div class="sparks-container">
+            <!-- Искры, которые идут из сердца -->
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+        </div>
+        <p>Loading&#8230;</p>
+    </div>
+</div>
+
+<main class="main">
+    <div class="border-light"></div>
+
+    <section class="main-section" id="mainSection">
+        <div class="left" id="content-section">
+            <div class="content-left active" id="content1">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Click the button below to&#160;Download chat!</p>
+                <a class="btn-app" href="#">Download</a>
+            </div>
+            <div class="content-left" id="content2">
+                <div class="history">
+                    <div class="history-item">
+                        <div class="history-time">
+                            <p>03.09.2025 12:12PM</p> <div><button type="button" class="del">
+                                <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6M14 10V17M10 10V17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </button>
+                        <button type="button" class="rep"><svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g   stroke-width="0"></g><g   stroke-linecap="round" stroke-linejoin="round"></g><g  > <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C4.44772 1 4 1.44772 4 2V22C4 22.5523 4.44772 23 5 23C5.55228 23 6 22.5523 6 22V15.693L18.8542 10.8727C20.5846 10.2238 20.5846 7.77627 18.8542 7.12739L6 2.30705V2C6 1.44772 5.55228 1 5 1ZM6 4.44305V13.557L17.6526 9.18732C17.8256 9.12243 17.8256 8.87767 17.6526 8.81278L6 4.44305Z" ></path> </g></svg></button></div>
+                        </div>
+                        <div class="history-user">
+                            <img src="./img/avatar.png" alt="User">
+                        <div class="history-name">
+                            <p>Name SubName</p>
+                        <div class="history-info">
+                            <p><span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span>Romania</p>
+                            <p><span>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </span> 00:05</p>
+                        </div>
+                    </div>
+                        </div>
+                        <button class="super-msg">Message</button>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-time">
+                            <p>03.09.2025 12:12PM</p> <div><button type="button" class="del">
+                                <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6M14 10V17M10 10V17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </button>
+                        <button type="button" class="rep"><svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g   stroke-width="0"></g><g   stroke-linecap="round" stroke-linejoin="round"></g><g  > <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C4.44772 1 4 1.44772 4 2V22C4 22.5523 4.44772 23 5 23C5.55228 23 6 22.5523 6 22V15.693L18.8542 10.8727C20.5846 10.2238 20.5846 7.77627 18.8542 7.12739L6 2.30705V2C6 1.44772 5.55228 1 5 1ZM6 4.44305V13.557L17.6526 9.18732C17.8256 9.12243 17.8256 8.87767 17.6526 8.81278L6 4.44305Z" ></path> </g></svg></button></div>
+                        </div>
+                        <div class="history-user">
+                            <img src="./img/avatar.png" alt="User">
+                        <div class="history-name">
+                            <p>Name SubName</p>
+                        <div class="history-info">
+                            <p><span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span>Romania</p>
+                            <p><span>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </span> 00:05</p>
+                        </div>
+                    </div>
+                        </div>
+                        <button class="super-msg">Message</button>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-time">
+                            <p>03.09.2025 12:12PM</p>
+                            <div>
+                        <button type="button" class="rep"><svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g   stroke-width="0"></g><g   stroke-linecap="round" stroke-linejoin="round"></g><g  > <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C4.44772 1 4 1.44772 4 2V22C4 22.5523 4.44772 23 5 23C5.55228 23 6 22.5523 6 22V15.693L18.8542 10.8727C20.5846 10.2238 20.5846 7.77627 18.8542 7.12739L6 2.30705V2C6 1.44772 5.55228 1 5 1ZM6 4.44305V13.557L17.6526 9.18732C17.8256 9.12243 17.8256 8.87767 17.6526 8.81278L6 4.44305Z" ></path> </g></svg></button></div>
+                        <button type="button" class="del">
+                            <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6M14 10V17M10 10V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+                        </div>
+                        <div class="history-user">
+                            <img src="./img/avatar.png" alt="User">
+                        <div class="history-name">
+                            <p>Name SubName</p>
+                        <div class="history-info">
+                            <p><span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span>Romania</p>
+                            <p><span>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </span> 00:05</p>
+                        </div>
+                    </div>
+                        </div>
+                        <button class="super-msg">Message</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content-left" id="content3">
+                <div class="chat">
+                    <div class="chat-title">
+                      <h1>Name Subname</h1>
+                      <h2>Status</h2>
+                      <figure class="avatar">
+                        <img src="./img/avatar.png" /></figure>
+                    </div>
+                    <div class="messages">
+                      <div class="messages-content"></div>
+                    </div>
+                    <div class="message-box">
+                      <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+                      <button type="submit" class="message-submit">Send</button>
+                    </div>
+
+                  </div>
+                  <div class="bg"></div>
+            </div>
+            <div class="content-left" id="content4">
+                <div class="package-container">
+                    <div class="package brilliant">
+                        <div class="name">Basic</div>
+                        <div class="price">&#8364;0</div>
+                        <div class="trial">Totally free</div>
+                        <hr>
+                        <ul>
+                            <li><strong>5</strong> team members</li>
+                            <li><strong>3</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                        </ul>
+                    </div>
+                    <div class="package ">
+                        <div class="name">Brilliant</div>
+                        <div class="price">&#8364;5</div>
+                        <div class="trial">Free 30 day trial</div>
+                        <hr>
+                        <ul>
+                            <li><strong>Unlimited</strong> team members</li>
+                            <li><strong>Unlimited</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                            <li>Team analytics</li>
+                            <li>Send files</li>
+                        </ul>
+                    </div>
+                    <div class="package">
+                        <div class="name">Golden</div>
+                        <div class="price">&#8364;2</div>
+                        <div class="trial">Available for a&#160;month</div>
+                        <hr>
+                        <ul>
+                            <li><strong>8</strong> team members</li>
+                            <li><strong>6</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                        </ul>
+                    </div>
+                    <div class="package brilliant">
+                        <div class="name">Basic</div>
+                        <div class="price">&#8364;0</div>
+                        <div class="trial">Totally free</div>
+                        <hr>
+                        <ul>
+                            <li><strong>5</strong> team members</li>
+                            <li><strong>3</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                        </ul>
+                    </div>
+                    <div class="package ">
+                        <div class="name">Brilliant</div>
+                        <div class="price">&#8364;5</div>
+                        <div class="trial">Free 30 day trial</div>
+                        <hr>
+                        <ul>
+                            <li><strong>Unlimited</strong> team members</li>
+                            <li><strong>Unlimited</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                            <li>Team analytics</li>
+                            <li>Send files</li>
+                        </ul>
+                    </div>
+                    <div class="package">
+                        <div class="name">Golden</div>
+                        <div class="price">&#8364;2</div>
+                        <div class="trial">Available for a&#160;month</div>
+                        <hr>
+                        <ul>
+                            <li><strong>8</strong> team members</li>
+                            <li><strong>6</strong> team playlists</li>
+                            <li><strong>Unlimited</strong> public playlists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-left">
+               <div class="logo">
+                <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g   stroke-width="0"></g><g   stroke-linecap="round" stroke-linejoin="round"></g><g  ><path fill="#FFAC33" d="M16.13 17.444L2.129 3.445c-.391-.39 1.023-1.804 1.414-1.415l14.001 14c.391.391-1.219 1.61-1.414 1.414z"></path><path fill="#DD2E44" d="M34.197 14.488a8.764 8.764 0 0 0-8.764-8.764a8.747 8.747 0 0 0-7.121 3.667a8.747 8.747 0 0 0-7.121-3.667a8.764 8.764 0 0 0-8.764 8.764c0 .686.087 1.351.236 1.99c1.217 7.562 9.624 15.538 15.649 17.729c6.024-2.19 14.432-10.167 15.647-17.728c.151-.64.238-1.305.238-1.991z"></path><path fill="#FFCC4D" d="M34.648 25.764s-4.509-4.45-6.41-4.45l-5.657-.009l-1.195 1.195l.009 5.657c0 1.901 4.45 6.41 4.45 6.41c.858.787 1.925 1.204 2.695 1.204c.634 0 1.14-.276 1.505-.775c.31-.427.426-.992.426-1.682c0-1.254-.556-2.864-1.39-4.313c1.449.833 3.059 1.39 4.313 1.39c.689 0 1.255-.116 1.682-.426c.499-.365.775-.871.775-1.505c.001-.771-.416-1.837-1.203-2.696z"></path><path fill="#FFAC33" d="M31.569 32.542c-.256 0-.487-.122-.683-.317L17.497 18.827c-.391-.391 1.023-1.805 1.414-1.415l13.39 13.399a1.015 1.015 0 0 1-.013 1.427a1.037 1.037 0 0 1-.719.304z"></path><path fill="#FFCC4D" d="M.161 1.123A1.003 1.003 0 0 1 1.402.152l6.541 1.625c.452.113.73.521.759.989a1.002 1.002 0 0 1-.793.961c-.144.031-3.636.833-4.005 4.051a.999.999 0 0 1-1.959.145L.195 1.381a.983.983 0 0 1-.034-.258z"></path><path fill="#A0041E" d="M22.184 16.015a1 1 0 0 1-.916.931c-3.268.269-3.75 2.12-4.217 3.91l-.108.411a1 1 0 0 1-1.929-.529l.103-.386c.489-1.875 1.306-5.013 5.988-5.399a1 1 0 0 1 1.079 1.062z"></path></g></svg>
+                <p class="Logo-name">Logo name</p>
+               </div>
+                <!-- <button type="button" class="btn-store btn-nav" data-popup="storePopup">Store</button> -->
+                <div class="nav-list nav-list-left">
+                    <button class="btn-home active" data-tab="1">
+                        <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3103 1.77586C11.6966 1.40805 12.3034 1.40805 12.6897 1.77586L20.6897 9.39491L23.1897 11.7759C23.5896 12.1567 23.605 12.7897 23.2241 13.1897C22.8433 13.5896 22.2103 13.605 21.8103 13.2241L21 12.4524V20C21 21.1046 20.1046 22 19 22H14H10H5C3.89543 22 3 21.1046 3 20V12.4524L2.18966 13.2241C1.78972 13.605 1.15675 13.5896 0.775862 13.1897C0.394976 12.7897 0.410414 12.1567 0.810345 11.7759L3.31034 9.39491L11.3103 1.77586ZM5 10.5476V20H9V15C9 13.3431 10.3431 12 12 12C13.6569 12 15 13.3431 15 15V20H19V10.5476L12 3.88095L5 10.5476ZM13 20V15C13 14.4477 12.5523 14 12 14C11.4477 14 11 14.4477 11 15V20H13Z" ></path> </g></svg>
+                    </button>
+                    <button class="btn-history" data-tab="2">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3.00683 12C3.00683 16.9668 7.03321 20.9932 12 20.9932C16.9668 20.9932 20.9932 16.9668 20.9932 12C20.9932 7.03321 16.9668 3.00683 12 3.00683C7.03321 3.00683 3.00683 7.03321 3.00683 12Z"></path> <path d="M12 5C11.4477 5 11 5.44771 11 6V12.4667C11 12.4667 11 12.7274 11.1267 12.9235C11.2115 13.0898 11.3437 13.2343 11.5174 13.3346L16.1372 16.0019C16.6155 16.278 17.2271 16.1141 17.5032 15.6358C17.7793 15.1575 17.6155 14.5459 17.1372 14.2698L13 11.8812V6C13 5.44772 12.5523 5 12 5Z" ></path> </g></svg>
+                    </button>
+                    <button class="btn-chat" data-tab="3">
+                        <svg viewBox="0 0 24 24" data-name="24x24/On Light/Messages" xmlns="http://www.w3.org/2000/svg" ><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <rect id="view-box"></rect> <path id="Shape" d="M6.485,18.519a9.891,9.891,0,0,1-4.876.981c-.285,0-.584-.006-.887-.018a.739.739,0,0,1-.65-.432.738.738,0,0,1,.085-.775,11.192,11.192,0,0,0,2.072-3.787A9.751,9.751,0,1,1,10.751,19.5,9.661,9.661,0,0,1,6.485,18.519ZM6.808,17a8.247,8.247,0,1,0-3.139-3.015.75.75,0,0,1,.092.535A10.189,10.189,0,0,1,2.2,17.99a7.2,7.2,0,0,0,3.816-.947.745.745,0,0,1,.431-.136A.756.756,0,0,1,6.808,17Zm-.057-4.5a.75.75,0,0,1,0-1.5h7a.75.75,0,0,1,0,1.5Zm0-4a.75.75,0,0,1,0-1.5h5a.75.75,0,1,1,0,1.5Z" transform="translate(1.249 2.25)" ></path> </g></svg>
+                    </button>
+                    <button class="btn-premium" data-tab="4">
+                        <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M5 19C5 18.4477 5.44772 18 6 18L18 18C18.5523 18 19 18.4477 19 19C19 19.5523 18.5523 20 18 20L6 20C5.44772 20 5 19.5523 5 19Z" ></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.87867 4.70711C11.0502 3.53554 12.9497 3.53554 14.1213 4.70711L16.6878 7.27359C16.9922 7.57795 17.4571 7.6534 17.8421 7.46091L18.5528 7.10558C20.0877 6.33813 21.7842 7.80954 21.2416 9.43755L19.4045 14.9487C18.9962 16.1737 17.8498 17 16.5585 17H7.44151C6.15022 17 5.0038 16.1737 4.59546 14.9487L2.75842 9.43755C2.21575 7.80955 3.91231 6.33813 5.44721 7.10558L6.15787 7.46091C6.54286 7.6534 7.00783 7.57795 7.31219 7.27359L9.87867 4.70711Z" ></path> </g></svg>
+                    </button>
+
+                </div>
+        <!-- <button type="button" class="btn-pr btn-nav" data-popup="popup1">Premium</button> -->
+            </div>
+        </div>
+        <div class="left-user-stream">
+            <div class="video-container">
+                <video id="videoElement-user" autoplay></video>
+            </div>
+        </div>
+        <div class="right">
+            <p class="users-online hide-on-stream">
+                <span class="online-icon"></span>
+                74735 users online
+            </p>
+
+            <div class="nav-right">
+
+                <div class=" nav-list-right">
+
+                    <div class="theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon white" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                          </svg>
+                        <label class="switch">
+                          <input type="checkbox" id="theme-switch">
+                          <span class="slider"></span>
+                        </label>
+                        <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg>
+                      </div>
+
+                </div>
+                <button type="button" class="btn-sing btn-nav active" data-popup="signInPopup">Sign In</button>
+                 <!-- Гамбургер-меню -->
+<div class="hamburger-menu">
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+            </div>
+            <div class="video-container">
+                <video id="videoElement" autoplay></video>
+            </div>
+            <div class="controls-container">
+                <div class="btns-setting-chat hide-on-stream">
+                <div class="gender-select">
+                    <select id="gender" class="select-box btn-set-chat">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="country-select">
+                    <select id="country" class="select-box  btn-set-chat">
+
+                        <option value="de">Germany</option>
+                        <option value="jp">Japan</option>
+                        <option value="fr">France</option>
+                        <option value="ru">Russia</option>
+                    </select>
+                </div>
+            </div>
+                <button id="startButton">Start Chat</button>
+                <div class="controls">
+                    <div class="control-btn" id="nextButton">Next User</div>
+                    <div class="control-btn" id="stopButton">Stop Chat</div>
+                    <div class="border-light"></div>
+    <button id="toggleLight" class="flashlight-btn">
+        <svg id="flashlightIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18H15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M10 21H14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M9.00082 15C9.00098 13 8.50098 12.5 7.50082 11.5C6.50067 10.5 6.02422 9.48689 6.00082 8C5.95284 4.95029 8.00067 3 12.0008 3C16.001 3 18.0488 4.95029 18.0008 8C17.9774 9.48689 17.5007 10.5 16.5008 11.5C15.501 12.5 15.001 13 15.0008 15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <footer class="footer">
+
+</footer>
+
+    <div id="signInPopup" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to&#160;sign in.</p>
+                <button class="popup-close">Close</button>
+            </div>
+
+    </div>
+
+    <div id="storePopup" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to&#160;sign in.</p>
+                <button class="popup-close">Close</button>
+            </div>
+
+    </div>
+    <div id="popup1" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to&#160;sign in.</p>
+                <button class="popup-close">Close</button>
+
+        </div>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
