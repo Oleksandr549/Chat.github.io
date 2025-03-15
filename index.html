@@ -710,26 +710,40 @@
             74735 users online
           </p>
         <div class="btns-setting-chat hide-on-stream">
-          <div class="gender-select">
-            <select id="gender" class="select-box btn-set-chat">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="all">All</option>
-            </select>
-          </div>
+          <button data-popup="genderPopup" id="genderBtn">Gender</button>
+          <input type="hidden" id="genderInput">
 
-          <div class="country-select">
-            <select id="country" class="select-box btn-set-chat">
-              <option value="de">Germany</option>
-              <option value="jp">Japan</option>
-              <option value="fr">France</option>
-              <option value="ru">Russia</option>
-            </select>
-          </div>
+          <button data-popup="countryPopup" id="countryBtn">Country</button>
+          <input type="hidden" id="countryInput">
         </div>
         <button id="startButton">Start Chat</button>
+        <div class="tag-container">
+          <div class="tags" id="tags"></div>
+          <div class="input-container">
+              <span>#</span>
+              <input type="text" id="tagInput" maxlength="14" placeholder="Add Tag!">
+              <button class="add-button" id="addTag">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </button>
+          </div>
+      </div>
         <div class="controls">
-            <div class="control-btn" id="repButton">
+          <div class="stream-load ">
+            <div class="heart-container">
+              <!-- Сердце с анимацией -->
+              <div class="heart"></div>
+              <div class="sparks-container">
+              <!-- Искры, которые идут из сердца -->
+              <div class="spark"></div>
+              <div class="spark"></div>
+              <div class="spark"></div>
+              <div class="spark"></div>
+              <div class="spark"></div>
+              </div>
+
+          </div>
+          </div>
+            <div class="control-btn" data-popup="reportPopup" id="repButton">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <!-- Определение линейного красного градиента -->
@@ -969,6 +983,72 @@
                 <p>Enter your credentials to&#160;sign in.</p>
                 <button class="popup-close">Close</button>
 
+        </div>
+    </div>
+
+    <div id="genderPopup" class="popup">
+        <div class="popup-background"></div>
+        <div class="popup-content gender-popup">
+            <button class="popup-close">
+                <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+            </button>
+
+            <div class="gender-select">
+                <button class="gender-option" data-value="male">
+                    <span >
+                    <img src="./img/male.png" alt="img">
+                    </span>
+                    Male
+                </button>
+                <button class="gender-option" data-value="female">
+                    <span >
+                        <img src="./img/female.png" alt="img">
+                    </span>
+                    Female
+                </button>
+                <button class="gender-option" data-value="all">
+                    <span >
+                        <img src="./img/gender.png" alt="img">
+                    </span>
+                    All
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="reportPopup" class="popup">
+        <div class="popup-background"></div>
+        <div class="popup-content">
+            <button class="popup-close">
+                <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+            </button>
+            <div class="report-select">
+                <button class="report-option" data-value="de">Report <span><img src="./img/custody.png" alt="img"></span> </button>
+                <button class="report-option" data-value="jp">Report <span><img src="./img/custody.png" alt="img"></span></button>
+                <button class="report-option" data-value="fr">Report <span><img src="./img/custody.png" alt="img"></span></button>
+                <button class="report-option" data-value="ru">Report <span><img src="./img/custody.png" alt="img"></span></button>
+                <button class="report-option" data-value="fr">Report <span><img src="./img/custody.png" alt="img"></span></button>
+                <button class="report-option" data-value="ru">Report <span><img src="./img/custody.png" alt="img"></span></button>
+            </div>
+        </div>
+    </div>
+    <div id="countryPopup" class="popup">
+        <div class="popup-background"></div>
+        <div class="popup-content">
+            <button class="popup-close">
+                <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+            </button>
+            <div class="country-select">
+                <button class="country-option" data-value="de">Germany <span><img src="./img/uk.png" alt="img"></span> </button>
+                <button class="country-option" data-value="jp">Japan <span><img src="./img/uk.png" alt="img"></span></button>
+                <button class="country-option" data-value="fr">France <span><img src="./img/uk.png" alt="img"></span></button>
+                <button class="country-option" data-value="ru">Russia <span><img src="./img/uk.png" alt="img"></span></button>
+            </div>
+        </div>
+    </div>
+    <div id="friendRequestPopup" class="popup" style="display: none;">
+
+        <div class="popup-content">
+            <p id="popupMessage">You&#8217;ve got a&#160;new friend request! 💚</p>
         </div>
     </div>
     <script src="./js/index.bundle.js"></script>
