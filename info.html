@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Guidelines</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body class="">
+    <header class="header hide-on-stream">
+  <div class="header-container">
+
+    <a href="index.html">
+      <div class="logo">
+       <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g   stroke-width="0"></g><g   stroke-linecap="round" stroke-linejoin="round"></g><g  ><path fill="#FFAC33" d="M16.13 17.444L2.129 3.445c-.391-.39 1.023-1.804 1.414-1.415l14.001 14c.391.391-1.219 1.61-1.414 1.414z"></path><path fill="#DD2E44" d="M34.197 14.488a8.764 8.764 0 0 0-8.764-8.764a8.747 8.747 0 0 0-7.121 3.667a8.747 8.747 0 0 0-7.121-3.667a8.764 8.764 0 0 0-8.764 8.764c0 .686.087 1.351.236 1.99c1.217 7.562 9.624 15.538 15.649 17.729c6.024-2.19 14.432-10.167 15.647-17.728c.151-.64.238-1.305.238-1.991z"></path><path fill="#FFCC4D" d="M34.648 25.764s-4.509-4.45-6.41-4.45l-5.657-.009l-1.195 1.195l.009 5.657c0 1.901 4.45 6.41 4.45 6.41c.858.787 1.925 1.204 2.695 1.204c.634 0 1.14-.276 1.505-.775c.31-.427.426-.992.426-1.682c0-1.254-.556-2.864-1.39-4.313c1.449.833 3.059 1.39 4.313 1.39c.689 0 1.255-.116 1.682-.426c.499-.365.775-.871.775-1.505c.001-.771-.416-1.837-1.203-2.696z"></path><path fill="#FFAC33" d="M31.569 32.542c-.256 0-.487-.122-.683-.317L17.497 18.827c-.391-.391 1.023-1.805 1.414-1.415l13.39 13.399a1.015 1.015 0 0 1-.013 1.427a1.037 1.037 0 0 1-.719.304z"></path><path fill="#FFCC4D" d="M.161 1.123A1.003 1.003 0 0 1 1.402.152l6.541 1.625c.452.113.73.521.759.989a1.002 1.002 0 0 1-.793.961c-.144.031-3.636.833-4.005 4.051a.999.999 0 0 1-1.959.145L.195 1.381a.983.983 0 0 1-.034-.258z"></path><path fill="#A0041E" d="M22.184 16.015a1 1 0 0 1-.916.931c-3.268.269-3.75 2.12-4.217 3.91l-.108.411a1 1 0 0 1-1.929-.529l.103-.386c.489-1.875 1.306-5.013 5.988-5.399a1 1 0 0 1 1.079 1.062z"></path></g></svg>
+       <p class="Logo-name">Swiperoulette</p>
+      </div>
+    </a>
+         <!-- <button type="button" class="btn-store btn-nav" data-popup="storePopup">Store</button> -->
+
+ <!-- <button type="button" class="btn-pr btn-nav" data-popup="popup1">Premium</button> -->
+
+     <div class="nav-right" style="">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+
+      </ul>
+        <div class=" nav-list-right">
+
+            <div class="theme-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon white" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                  </svg>
+                <label class="switch">
+                  <input type="checkbox" id="theme-switch">
+                  <span class="slider"></span>
+                </label>
+                <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </div>
+
+        </div>
+
+    </div>
+  </div>
+</header>
+<style>
+  .nav-right {
+    padding: 0 40px 0 0;
+  }
+@media (min-width: 1030px) {
+    .nav-right {
+        top: 25px;
+        padding: 0 40px 0 30px;
+    }
+}
+
+</style>
+<!-- Гамбургер-меню -->
+<div class="hamburger-menu hide-on-stream">
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="landing-page.html">About Chat</a></li>
+            <li><a href="info.html">Safety</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="info.html">Privacy Policy</a></li>
+            <li><a href="info.html">Terms Of&#160;Service</a></li>
+            <li><a href="info.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+</div>
+
+    <div id="loading-screen">
+        <div class="heart-container">
+          <!-- Сердце с анимацией -->
+          <div class="heart"></div>
+          <div class="sparks-container">
+            <!-- Искры, которые идут из сердца -->
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+            <div class="spark"></div>
+          </div>
+          <p>Loading&#8230;</p>
+        </div>
+      </div>
+    <main class="main main-info">
+        <section class="info">
+            <div class="info-container container">
+                <h3 class="title">
+                    Lorem ipsum dolor sit amet.
+                </h3>
+                <div class="info-bg info-block" >
+
+                    <div>
+                        <h5 class="title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error at&#160;recusandae quod architecto quis illo ipsum aliquam velit minima, illum repellendus corrupti natus temporibus tempora est ex&#160;reprehenderit ut&#160;vitae porro molestiae saepe? Velit, accusamus explicabo accusantium ducimus recusandae aperiam, vitae corporis dolor adipisci ad&#160;eligendi natus sapiente deleniti minus, iure esse eaque id&#160;neque est quos reiciendis. Quod, sit eveniet dicta, quisquam deserunt porro ipsam ipsum odit beatae qui vitae aspernatur similique culpa adipisci fugit nihil mollitia, eum itaque cum accusamus. At&#160;laborum totam saepe alias consequuntur. Repudiandae voluptatibus laborum rem perspiciatis quis delectus, voluptatem odio ex&#160;dolores?</p>
+
+                    </div>
+                    <div>
+                        <h5 class="title">Lorem ipsum dolor sit amet.</h5>
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit voluptas placeat! Dolorem atque sunt officia sint, doloremque asperiores laboriosam?</p>
+                        <a href="#">Link</a>
+                        <h5 class="title">Lorem ipsum dolor sit amet.</h5>
+                        <ol>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+    <div class="footer-container container ">
+        <p>&#169; 2025 Swiperoulette</p>
+        <div>
+            <a href="#">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g></svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Twitter" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#1da1f2"></rect><path fill="#ffffff" d="M437 152a72 72 0 01-40 12a72 72 0 0032-40a72 72 0 01-45 17a72 72 0 00-122 65a200 200 0 01-145-74a72 72 0 0022 94a72 72 0 01-32-7a72 72 0 0056 69a72 72 0 01-32 1a72 72 0 0067 50a200 200 0 01-105 29a200 200 0 00309-179a200 200 0 0035-37"></path></g></svg> </a>
+            <a href="#">
+                <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Facebook-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0"> <path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z" id="Facebook"> </path> </g> </g> </g></svg>
+                 </a>
+        </div>
+    </div>
+</footer>
+
+    <div id="signInPopup" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <div class="auth-container">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="login">Sign In</div>
+                        <div class="tab" data-tab="register">Register</div>
+                    </div>
+                    <div class="form-container">
+                        <form id="loginForm" class="form active">
+                            <div class="input-group">
+                                <input type="email" id="loginEmail" placeholder="Email" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" id="loginPassword" placeholder="Password" required>
+                            </div>
+                            <div>
+                                <button type="submit">Sign In</button>
+                            <div class="error-message" id="loginError">error-message</div>
+                            </div>
+                            <a href="/auth/google-login" class="google-auth">
+                                <span><svg viewBox="-0.5 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <title>Google-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-401.000000, -860.000000)"> <g id="Google" transform="translate(401.000000, 860.000000)"> <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" id="Fill-1" fill="#FBBC05"> </path> <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" id="Fill-2" fill="#EB4335"> </path> <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" id="Fill-3" fill="#34A853"> </path> <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" id="Fill-4" fill="#4285F4"> </path> </g> </g> </g> </g></svg></span>
+                            </a>
+                        </form>
+                        <form id="registerForm" class="form">
+                            <div class="input-group">
+                                <input type="text" id="registerName" placeholder="Full Name" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="registerEmail" placeholder="Email" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" id="registerPassword" placeholder="Password" required>
+                            </div>
+                            <div class="input-group">
+                                <select id="registerGender">
+                                    <option value="0">Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit">Create Account</button>
+                            <div class="error-message" id="registerError">error-message</div>
+                            </div>
+                            <a href="/auth/google-login" class="google-auth">
+                                <span><svg viewBox="-0.5 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g > <title>Google-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-401.000000, -860.000000)"> <g id="Google" transform="translate(401.000000, 860.000000)"> <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" id="Fill-1" fill="#FBBC05"> </path> <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" id="Fill-2" fill="#EB4335"> </path> <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" id="Fill-3" fill="#34A853"> </path> <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" id="Fill-4" fill="#4285F4"> </path> </g> </g> </g> </g></svg></span>
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+                <button class="popup-close">
+                    <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+                </button>
+            </div>
+
+    </div>
+
+    <div id="storePopup" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to&#160;sign in.</p>
+                <button class="popup-close">Close</button>
+            </div>
+
+    </div>
+    <div id="popup1" class="popup">
+        <div class="popup-background">
+        </div>
+            <div class="popup-content">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to&#160;sign in.</p>
+                <button class="popup-close">Close</button>
+
+        </div>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
