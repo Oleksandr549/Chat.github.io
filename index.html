@@ -545,8 +545,12 @@
             <input type="file" id="avatar-input" accept="image/*">
             <input type="text" id="name-input" placeholder="Name">
             <input type="date" id="birthday-input">
-            <input type="text" id="gender-input" placeholder="Gender">
-            <input type="text" id="location-input" placeholder="Location">
+
+            <select id="gender-input">
+                <option selected  value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
             <div class="modal-buttons">
                 <button class="save-btn" id="save-btn">Save</button>
                 <button class="close-btn" id="close-btn">Close</button>
